@@ -53,6 +53,7 @@ i{
 
 .half-width{
     width: 50%;
+    display: flex;
 }
 .half-width img{
     width: 75%;
@@ -158,13 +159,15 @@ p .footer-bottom{
     font-weight: 400px;
 }
 /* responsive */
-@media only screen and(max-width:688px){
-    .first-part{
-        width: 100%;
-    }
-    .main{
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width:500px){
+
+    .second-part{
+        width: 1050px;
+    height: 1977px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 27px;
+    margin-top: 70px;
 
     }
 
